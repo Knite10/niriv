@@ -1,5 +1,6 @@
 # Install SearXNG directly from GitHub (avoids -e . issues)
-git+https://github.com/searxng/searxng.git@main
+git+https://github.com/searxng/searxng.git@master
+
 gunicorn
 
 # Other dependencies
