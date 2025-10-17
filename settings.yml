@@ -1,0 +1,29 @@
+server:
+  base_url: "https://searxng-latest-9f4n.onrender.com"  # change if your URL changes
+  bind_address: 0.0.0.0
+  port: $PORT
+
+logging:
+  level: info
+
+search:
+  default_category: general
+  safe_search: true
+
+cors:
+  allowed_origins:
+    - "*"   # allow all origins for client-side JS
+
+cache:
+  backend: null  # disable Redis for free tier
+
+engines:
+  google:
+    enabled: true
+  bing:
+    enabled: true
+  duckduckgo:
+    enabled: true
+
+ui:
+  theme: oscar
